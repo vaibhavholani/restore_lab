@@ -17,40 +17,11 @@ export default function Services() {
                     <h2 class="custom-heading text-uppercase">Meet our Team!</h2>
                 </div>
                 <ul class="timeline">
-                    <li id="behdin-service">
-                        <div class="timeline-image" id="behdin-service"><img class="rounded-circle img-fluid" src="/images/nowrouzikia-behdin.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="subheading">Principle Investigator</h4>
-                                <h4 class="subheading">Dr. Bsehdin Nowrouzi-Kia</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Behdin Nowrouzi-Kia, PhD, is an assistant professor in the Department of Occupational Therapy and Occupational Science, where he also holds the inaugural  Emily Geldsaler Grant Early Career Professorship in Workplace Mental Health. Through an occupational lens, his research program is a systematic study of occupations in the areas of work disability prevention, return to work, and disability management. This approach is designed to produce results directly applicable to identify and assess risk and to develop interventions for preventing or improving high-risk behaviours in the workplace. Dr. Nowrouzi-Kia’s work is motivated by efforts in the field of work disability prevention that extends beyond the efforts to prevent or cure diseases from a purely physical perspective, towards more holistic approaches.</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted" id="parvin-service">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="/images/drparvin.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="subheading">Collaborating Investigator</h4>
-                                <h4 class="subheading">Dr. Parvin Efthekar</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">I am an Occupational Therapist by training, Affiliate Scientist, KITE Research Institute and Assistant Professor, Department of Occupational Therapy, University of Toronto. I have been a practicing occupational therapist since 2001 with areas of expertise in  neuro-rehabilitation with a focus on Stroke, Multiple Sclerosis, Spinal Cord Injury and Acquired Brain Injury. I have been  practicing advanced, evidence-based interventions to treat and manage spasticity, with an emphasis on restoring function and improving quality of life. My doctoral work evaluated spasticity using combined kinematic and clinical outcome measures to assess the impact of BoNTA on arm function. My current research and clinical practice focus on patient and family goal-based intervention using the ICF model. My research interest areas are neuromodulation (sEMG, NMES/FES) coupled with traditional rehabilitation modalities such as exercise, massed practice, splinting/serial casting after upper limb paralysis or nerve transplant in individuals with Stroke or SCI. My post-doctoral fellowship at the University of Toronto was a multi-site randomized trial studying outdoor activities for seniors. I provide education in the Department of Occupational Therapy through  guest lectures, as a teaching assistant, lab educator and research supervisor for an OT student project.  During COVID-19, I have pivoted to providing assessment and treatment via telerehab to Toronto Rehab Spasticity patients. I am an active member of the peripheral nerve transplant team and act as research therapist in the Upper Extremity NeuroRestorative and Innovations Lab at Lyndhurst Centre.</p></div>
-                        </div>
-                    </li>
-                    {/* <li id="alibani-service">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="/images/dralibani.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="subheading">Dr. Ali-Bani Fatemi</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>s
-                    </li> */}
                     <li class="timeline-inverted" id="abosede-service">
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="/images/abosede.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Clinical Research Intern @ Dept. of Occupational Therapy and Occupational Sciences</h4>
+                                <h4 class="subheading">Clinical Research Intern @ Dept. of Occupational Therapy and Occupational Sciences</h4>
                                 <h4 class="subheading">Dr. Abosede Okoduwa</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">I am currently a Clinical research Intern at the Department of Occupational Science and Occupational Therapy, University of Toronto, Ontario, Canada. She assists the research team with literature search, protocol writing and review of questionnaires. She has over 10years of experience as a clinician and has extensive knowledge in clinical research. She possesses strong interpersonal and teaming skills, she is self motivated and result driven. Abosede has a passion for improving the quality of life of people.</p></div>
@@ -60,7 +31,7 @@ export default function Services() {
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="/images/vanessa.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>BKin, MScOT Student @ Dept. of Occupational Therapy and Occupational Sciences</h4>
+                                <h4 class="subheading">BKin, MScOT Student @ Dept. of Occupational Therapy and Occupational Sciences</h4>
                                 <h4 class="subheading">Vanessa Tam</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">Vanessa is currently in the Occupational Therapy program in the Faculty of Medicine at the University of Toronto. She has a passion in working with individuals achieve their rehabilitation goals. Prior to the Occupational Therapy program, Vanessa worked in a Mental Health Return to Work Program where she supported individuals with mental health conditions return to activities that are meaningful to them. She is currently assisting with a systematic review project related to return-to-work interventions for individuals with work-related mental health conditions.</p></div>
@@ -100,7 +71,7 @@ export default function Services() {
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="/images/divij.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Webmaster and Research Intern @ ReSTORE Lab</h4>
+                                <h4 class="subheading">Webmaster and Research Intern @ ReSTORE Lab</h4>
                                 <h4 class="subheading">Divij Sanjanwala</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">Divij is a Third Year undergraduate student at the University of Toronto and is pursuing Computer Science, Economics with a Focus in Data Analytics, and Statistical Sciences. Divij's Interests lies in the fields that leverage the power of Data using Efficient techniques Machine Learning Algorithms and techniques to achieve decision making</p></div>
