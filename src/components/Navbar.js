@@ -41,8 +41,7 @@ function Navbar() {
       <nav className={`navbar`}>
         <div className='navbar-container'>
           <Link to='/' className={`navbar-logo ${navbar ? "active-navbar": null}`} onClick={closeMobileMenu}>
-            <pre> ReSTORE </pre>
-            <i class="fas fa-sync-alt"></i>
+            <h4><span class="spacing">RESTORE</span> <span style={{color: "var(--secondary)"}}>LAB</span></h4>
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
