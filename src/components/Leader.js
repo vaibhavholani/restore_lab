@@ -5,7 +5,7 @@ export default function Leader() {
     return (
         <div class="leader-container">
             <div className="heading">
-                <h1> <span style={{color: "var(--secondary)"}}> OUR </span>  <span class="fat-underline"> LEADER </span></h1>
+                <h1> <span style={{color: "var(--secondary)"}}> TEAM </span>  <span class="fat-underline"> LEAD </span></h1>
             </div>
             <div className="main">
                 <div className="left">
