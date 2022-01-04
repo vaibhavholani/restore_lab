@@ -38,8 +38,7 @@ function Footer() {
           </div>
           <div class='footer-link-items'>
             <h2>About Us</h2>
-            <a href='#' target='_blank'>Publlications</a>
-            <a href='#' target='_blank'>Facilities</a>
+            <a href='/projects'>Publlications</a>
           </div>
         </div>
       </div>

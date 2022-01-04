@@ -37,7 +37,13 @@ function Cards() {
             />
             <CardItem
               src='images/someB.png'
-              text='Need to know the name of the b'
+              text='Blue Branch'
+              label='Funders'
+              path='/sign-up'
+            />
+            <CardItem
+              src='images/wcb.jpg'
+              text='Workers’ Compensation Board - Alberta'
               label='Funders'
               path='/sign-up'
             />
