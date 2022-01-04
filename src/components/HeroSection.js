@@ -22,7 +22,7 @@ function HeroSection() {
     <div className='hero-container'>
       <div className="title">
         <h1 class="main"><span style={{color: "white"}}>RESTORE</span> LAB</h1>
-        <p className="desc">Rehabilation Sciences Through Occupational Research and Engagement</p>
+        <p className="desc">Rehabilitation Sciences Through Occupational Research and Engagement</p>
       </div>
     </div>
 

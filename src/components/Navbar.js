@@ -85,7 +85,7 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/products'
+                to='/projects'
                 className={`nav-links ${navbar ? "active-navbar": null}`}
                 onClick={closeMobileMenu}
               >
