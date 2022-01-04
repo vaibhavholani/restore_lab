@@ -10,9 +10,6 @@ function Footer() {
         <p className='footer-subscription-heading'>
           Join the Restore newsletter to receive updates on our latest work
         </p>
-        <p className='footer-subscription-text'>
-          You can unsubscribe at any time.
-        </p>
         <div className='input-areas'>
           <form>
             <input
@@ -45,13 +42,12 @@ function Footer() {
       <section class='social-media'>
         <div class='social-media-wrap'>
           <div class='footer-logo'>
-            <Link to='/' className='social-logo'>
+            <Link to='/' className='social-logo' style={{fontWeight: "bold"}}>
               <pre>
-              ReSTORE <i class="fas fa-sync-alt"></i>
-              </pre>
+              RESTORE LAB</pre>
             </Link>
           </div>
-          <small class='website-rights'>ReSTORE © 2021</small>
+          <small class='website-rights' style={{fontWeight: "bold"}}>ReSTORE © 2021</small>
           <div class='social-icons' style={{display: "none"}}>
             <Link
               class='social-icon-link facebook'
