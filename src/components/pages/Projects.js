@@ -4,7 +4,7 @@ import "./Projects.css"
 export default function Projects() {
     return (<>
         <h1> <span style={{color: "white", fontSize: "3rem"}}>OUR </span><span style={{color: "var(--secondary)", fontSize: "3rem"}} class="fat-underline"> PROJECTS </span></h1>
-        <div class="project-container">
+        <div class="project-container" id='sshrc_project'>
         <div className="heading">  
                 <h1> <span style={{color: "black"}}> Participation and engagement needs of home care rehabilitation professionals transitioning out of the COVID-19 pandemic:</span><span class="fat-underline" style={{color: "var(--secondary)"}}> A Pilot Study </span></h1>
             </div>
@@ -24,7 +24,7 @@ export default function Projects() {
                 </div>
             </div>
         </div>
-        <div class="project-container">
+        <div class="project-container" id='blue_branch_project'>
         <div className="heading">  
                 <h1><span style={{color: "black"}}>Impact of Labour Mobility on the Physical and Mental Health of Skilled Trades Workers in </span> <span class="fat-underline" style={{color: "var(--secondary)"}}>Ontario, Canada</span></h1>
             </div>
@@ -44,7 +44,7 @@ export default function Projects() {
                 </div>
             </div>
         </div>
-        <div class="project-container">
+        <div class="project-container" id='ontario_elec_project'>
         <div className="heading">  
                 <h1> <span style={{color: "black"}}>Supporting Employers in Apprentice Training: </span><span class="fat-underline" style={{color: "var(--secondary)"}}>Outcomes of a Training and Mentoring Program for Electrical and Plumbing Employers</span></h1>
             </div>
@@ -64,7 +64,7 @@ export default function Projects() {
                 </div>
             </div>
         </div>
-        <div class="project-container">
+        <div class="project-container" id='workers_comp_project'>
         <div className="heading">  
                 <h1> <span style={{color: "black"}}>Rapid review of telehealth treatments of psychological disorders</span></h1>
             </div>
