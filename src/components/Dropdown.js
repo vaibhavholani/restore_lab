@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { MenuItems } from './MenuItems';
 import './Dropdown.css';
 // import { Link } from 'react-router-dom';
 import { HashLink as Link} from 'react-router-hash-link';
 
-function Dropdown() {
+function Dropdown({MenuItems}) {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);

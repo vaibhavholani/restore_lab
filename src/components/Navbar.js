@@ -3,12 +3,15 @@ import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Dropdown from './Dropdown';
+import {InvestigatorItems} from './InvestigatorItems.js'
+import {ProjectItems} from './ProjectItems.js'
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
   const [navbar, setNavbar] = useState(false)
   const [dropdown, setDropdown] = useState(false);
+  const [dropdownProject, setDropdownProject] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -40,6 +43,22 @@ function Navbar() {
       setDropdown(false);
     }
   };
+  
+  const onMouseEnterProject = () => {
+    if (window.innerWidth < 960) {
+      setDropdownProject(false);
+    } else {
+      setDropdownProject(true);
+    }
+  };
+
+  const onMouseLeaveProject = () => {
+    if (window.innerWidth < 960) {
+      setDropdownProject(false);
+    } else {
+      setDropdownProject(false);
+    }
+  };
 
   window.addEventListener('resize', showButton);
 
@@ -59,7 +78,7 @@ function Navbar() {
       <nav className={`navbar`}>
         <div className='navbar-container'>
           <Link to='/' className={`navbar-logo ${navbar ? "active-navbar": null}`} onClick={closeMobileMenu}>
-            <h4><span class="spacing">RESTORE</span> <span style={{color: "var(--secondary)"}}>LAB</span></h4>
+            <h4><span class="spacing">ReSTORE</span> <span style={{color: "var(--secondary)"}}>LAB</span></h4>
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -81,9 +100,12 @@ function Navbar() {
               >
                 Our Team
               </Link>
-              {dropdown && <Dropdown />}
+              {dropdown && <Dropdown MenuItems={InvestigatorItems} />}
             </li>
-            <li className='nav-item'>
+            <li className='nav-item'
+              onMouseEnter={onMouseEnterProject}
+              onMouseLeave={onMouseLeaveProject}
+            >
               <Link
                 to='/projects'
                 className={`nav-links ${navbar ? "active-navbar": null}`}
@@ -91,6 +113,7 @@ function Navbar() {
               >
                 Research
               </Link>
+              {dropdownProject && <Dropdown MenuItems={ProjectItems} />}
             </li>
 
           </ul>

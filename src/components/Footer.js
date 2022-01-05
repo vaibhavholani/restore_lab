@@ -6,22 +6,6 @@ import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <div className='footer-container'>
-      <section className='footer-subscription'>
-        <p className='footer-subscription-heading'>
-          Join the Restore newsletter to receive updates on our latest work
-        </p>
-        <div className='input-areas'>
-          <form>
-            <input
-              className='footer-input'
-              name='email'
-              type='email'
-              placeholder='Your Email'
-            />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
-          </form>
-        </div>
-      </section>
       <div class='footer-links'>
         <div className='footer-link-wrapper'>
         </div>
@@ -32,11 +16,12 @@ function Footer() {
             <a href='https://www.facebook.com/restorelabuoft/' target='_blank'>Facebook</a>
             <a href='#' target='_blank'>Youtube</a>
             <a href='https://twitter.com/restore_lab' target='_blank'>Twitter</a>
+            <a href='https://www.linkedin.com/in/restore-lab/' target='_blank'>Linkedin</a>
           </div>
-          <div class='footer-link-items'>
+          {/* <div class='footer-link-items'>
             <h2>About Us</h2>
             <a href='/projects'>Publlications</a>
-          </div>
+          </div> */}
         </div>
       </div>
       <section class='social-media'>

@@ -1,7 +1,7 @@
-body {
-    background-color: black;
-}
 
+.all-projects {
+    background: black;
+}
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;

@@ -2,7 +2,8 @@ import React from 'react'
 import "./Projects.css"
 
 export default function Projects() {
-    return (<>
+    return (
+    <div class="all-projects">
         <h1> <span style={{color: "white", fontSize: "3rem"}}>OUR </span><span style={{color: "var(--secondary)", fontSize: "3rem"}} class="fat-underline"> PROJECTS </span></h1>
         <div class="project-container" id='sshrc_project'>
         <div className="heading">  
@@ -84,5 +85,5 @@ export default function Projects() {
                 </div>
             </div>
         </div>
-    </>)
+    </div>)
 }
