@@ -28,6 +28,11 @@ function Navbar() {
     showButton();
   }, []);
 
+  const joinUs = () => {
+    window.open("https://forms.gle/3kfx81nunxdaj5UR9", '_blank').focus();
+  }
+  
+
   const onMouseEnter = () => {
     if (window.innerWidth < 960) {
       setDropdown(false);
@@ -117,7 +122,7 @@ function Navbar() {
             </li>
 
           </ul>
-          {button && <Button buttonStyle={`btn--outline`} buttonGreen={navbar}>JOIN US</Button>}
+          {button && <Button buttonStyle={`btn--outline`} buttonGreen={navbar} onClick={joinUs}>JOIN US</Button>}
         </div>
       </nav>
     </>

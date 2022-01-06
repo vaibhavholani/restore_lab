@@ -20,7 +20,8 @@ export default function Services() {
                             if (index % 2 == 0) {
                                 return (
                                     <>
-                                    <li id = {item.id}>
+                                    <li >
+                                        <section style={{padding: 0, margin: 0}} id = {item.id}>
                                         <div class="timeline-image"><img class="rounded-circle img-fluid" src={item.img} alt="..." /></div>
                                         <div class="timeline-panel">
                                             <div class="timeline-heading">
@@ -29,6 +30,7 @@ export default function Services() {
                                             </div>
                                         <div class="timeline-body"><p class="text-muted">{item.desc}</p></div>
                                     </div>
+                                    </section>
                                     </li>
                                     </>
                                 )

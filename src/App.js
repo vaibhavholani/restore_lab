@@ -11,6 +11,19 @@ import Footer from './components/Footer.js';
 
 
 function App() {
+
+  (function() {
+    if (document.location.hash) {
+        setTimeout(function() {
+            window.scrollTo(window.scrollX, window.scrollY - 100);
+        }, 10);
+    }
+  })();
+
+  window.addEventListener('locationchange', function(){
+    console.log('location changed!');
+  })
+
   return (
     <>
       <Router>

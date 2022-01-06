@@ -29,10 +29,8 @@ function ImageSlider() {
                         <img src="/assets/behdin.jpg" />
                     </div>
                     <ul className="social-icons">
-                        <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i className="fa fa-instagram"></i></a></li>
-                        <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i className="fa fa-dribbble"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/behdin-nowrouzi-kia-42591664/" target="_blank"><i className="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://twitter.com/behdin" target="_blank"><i className="fa fa-twitter"></i></a></li>
                     </ul>
                     <div className="details">
                     <h2>Dr. Behdin Nowrouzi-Kia</h2>

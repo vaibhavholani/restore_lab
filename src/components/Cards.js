@@ -26,26 +26,26 @@ function Cards() {
             <CardItem
               src='images/sshrc.jpg'
               text='Social Sciences and Humanities Research Council'
-              label='Funders'
-              path='/services'
+              label='Funder'
+              path='/projects/#sshrc_project'
             />
             <CardItem
               src='images/oel.jpeg'
               text='Ontario Electrical League'
-              label='Funders'
-              path='/products'
+              label='Funder'
+              path='/projects#ontario_elec_project'
             />
             <CardItem
               src='images/someB.png'
               text='Blue Branch'
-              label='Funders'
-              path='/sign-up'
+              label='Funder'
+              path='/projects#blue_branch_project'
             />
             <CardItem
               src='images/wcb.jpg'
               text='Workers’ Compensation Board - Alberta'
-              label='Funders'
-              path='/sign-up'
+              label='Funder'
+              path='/projects#workers_comp_project'
             />
           </ul>
         </div>
