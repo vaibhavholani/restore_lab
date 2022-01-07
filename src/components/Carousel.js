@@ -46,10 +46,8 @@ function ImageSlider() {
                         <img src="images/drparvin.jpg" />
                     </div>
                     <ul className="social-icons">
-                        <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i className="fa fa-instagram"></i></a></li>
-                        <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i className="fa fa-dribbble"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/parvin-eftekhar-b2a15892/"><i className="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://twitter.com/ParvinEftekhar1"><i className="fa fa-twitter"></i></a></li>
                     </ul>
                     <div className="details">
                         <h2>Dr. Parvin Efthekar</h2>
@@ -58,7 +56,6 @@ function ImageSlider() {
                 </div>
                 </a>
             </div>
-
         </Slider>
         </div>
         </div>

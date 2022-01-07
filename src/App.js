@@ -7,6 +7,7 @@ import Services from './components/pages/Services';
 import Projects from './components/pages/Projects.js';
 import SignUp from './components/pages/SignUp';
 import Footer from './components/Footer.js';
+import ContactUs from './components/ContactUs';
 
 
 
@@ -32,6 +33,7 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path='/services' component={Services} />
           <Route path='/projects' component={Projects} />
+          <Route path='/contactus' component={ContactUs} />
           <Route path='/sign-up' component={SignUp} />
         </Switch>
       </Router>
