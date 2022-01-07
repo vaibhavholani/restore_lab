@@ -94,6 +94,11 @@ function Navbar() {
                 Home
               </Link>
             </li>
+            <li className='nav-item'>
+              <Link to='/contactus' className={`nav-links ${navbar ? "active-navbar": null}`} onClick={closeMobileMenu}>
+                Contact Us
+              </Link>
+            </li>
             <li className='nav-item'
               onMouseEnter={onMouseEnter}
               onMouseLeave={onMouseLeave}>
