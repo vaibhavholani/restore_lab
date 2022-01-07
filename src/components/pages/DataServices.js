@@ -1,6 +1,6 @@
 export const services = [
     {
-        img: "/images/nowrouzikia-behdin.jpg", 
+        img: "/images/behdin.jpg", 
         title: "Principle Investigator", 
         id: "behdin-service",
         name: "Dr. Behdin Nowrouzi-Kia", 

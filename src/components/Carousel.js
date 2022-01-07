@@ -26,7 +26,7 @@ function ImageSlider() {
             <a href="/services/#behdin-service" target="_self">
                 <div className="card">
                     <div className="card-image">
-                        <img src="/assets/behdin.jpg" />
+                        <img src="/images/behdin.jpg" />
                     </div>
                     <ul className="social-icons">
                         <li><a href="https://www.linkedin.com/in/behdin-nowrouzi-kia-42591664/" target="_blank"><i className="fab fa-linkedin-in"></i></a></li>
@@ -58,25 +58,6 @@ function ImageSlider() {
                 </div>
                 </a>
             </div>
-            {/* <div className="card-wrapper">
-            <a href="/services/#alibbani-service" target="_self">
-                <div className="card">
-                    <div className="card-image">
-                        <img src="images/dralibani.jpg" />
-                    </div>
-                    <ul className="social-icons">
-                        <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i className="fa fa-instagram"></i></a></li>
-                        <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i className="fa fa-dribbble"></i></a></li>
-                    </ul>
-                    <div className="details">
-                        <h2>Dr. Ali Bani-Fatemi </h2>
-                        <span className="job-desc">Please provide Profession</span>
-                    </div>
-                </div>
-                </a>
-            </div> */}
 
         </Slider>
         </div>

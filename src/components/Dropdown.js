@@ -17,13 +17,14 @@ function Dropdown({MenuItems}) {
         {MenuItems.map((item, index) => {
           return (
             <li key={index}>
-              <Link
+              <a
                 className={item.cName}
-                to={item.path}
+                href={item.path}
+                target="_self"
                 onClick={() => setClick(false)}
               >
                 {item.title}
-              </Link>
+              </a>
             </li>
           );
         })}

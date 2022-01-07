@@ -13,13 +13,15 @@ function Cards() {
               src='images/ot.jpg'
               text='The Department of Occupational Science and Occupational Therapy at the University of Toronto.'
               label='Affiliation'
-              path='/services'
+              path='https://ot.utoronto.ca/about/core-faculty/behdin-nowrouzi-kia/'
+              target="_blank"
             />
             <CardItem
               src='images/krembil.jpg'
               text='Krembil Research Institue'
               label='Affiliation'
-              path='/services'
+              path='https://www.uhnresearch.ca/researcher/behdin-nowrouzi-kia'
+              target="_blank"
             />
           </ul>
           <ul className='cards__items'>
@@ -28,24 +30,28 @@ function Cards() {
               text='Social Sciences and Humanities Research Council'
               label='Funder'
               path='/projects/#sshrc_project'
+              target="_self"
             />
             <CardItem
               src='images/oel.jpeg'
               text='Ontario Electrical League'
               label='Funder'
               path='/projects#ontario_elec_project'
+              target="_self"
             />
             <CardItem
               src='images/someB.png'
               text='Blue Branch'
               label='Funder'
               path='/projects#blue_branch_project'
+              target="_self"
             />
             <CardItem
               src='images/wcb.jpg'
               text='Workers’ Compensation Board - Alberta'
               label='Funder'
               path='/projects#workers_comp_project'
+              target="_self"
             />
           </ul>
         </div>
