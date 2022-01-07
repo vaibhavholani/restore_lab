@@ -29,14 +29,14 @@ export const services = [
         desc: `I am an Occupational Therapist by training, Affiliate Scientist, KITE Research Institute and Assistant Professor, Department of Occupational Therapy, University of Toronto. I have been a practicing occupational therapist since 2001 with areas of expertise in  neuro-rehabilitation with a focus on Stroke, Multiple Sclerosis, Spinal Cord Injury and Acquired Brain Injury. I have been  practicing advanced, evidence-based interventions to treat and manage spasticity, with an emphasis on restoring function and improving quality of life. My doctoral work evaluated spasticity using combined kinematic and clinical outcome measures to assess the impact of BoNTA on arm function. My current research and clinical practice focus on patient and family goal-based intervention using the ICF model. My research interest areas are neuromodulation (sEMG, NMES/FES) coupled with traditional rehabilitation modalities such as exercise, massed practice, splinting/serial casting after upper limb paralysis or nerve transplant in individuals with Stroke or SCI. My post-doctoral fellowship at the University of Toronto was a multi-site randomized trial studying outdoor activities for seniors. I provide education in the Department of Occupational Therapy through  guest lectures, as a teaching assistant, lab educator and research supervisor for an OT student project.  During COVID-19, I have pivoted to providing assessment and treatment via telerehab to Toronto Rehab Spasticity patients. I am an active member of the peripheral nerve transplant team and act as research therapist in the Upper Extremity NeuroRestorative and Innovations Lab at Lyndhurst Centre.`
     }, 
     {
-        img: "/images/abosede.jpg", 
+        img: "/images/abosede.png", 
         title: "Volunteer @ ReSTORE LAB", 
         id: "abosede-service",
         name: "Dr. Abosede Okoduwa", 
         desc: `I am currently a Clinical research Intern at the Department of Occupational Science and Occupational Therapy, University of Toronto, Ontario, Canada. She assists the research team with literature search, protocol writing and review of questionnaires. She has over 10years of experience as a clinician and has extensive knowledge in clinical research. She possesses strong interpersonal and teaming skills, she is self motivated and result driven. Abosede has a passion for improving the quality of life of people.`
     },
     {
-        img: "/images/joyce.jpg" , 
+        img: "/images/blank_person.png" , 
         title: "Co-op Student @ ReSTORE Lab", 
         id: "",
         name: "Joyce Lo", 

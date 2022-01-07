@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import 'font-awesome/css/font-awesome.min.css';
 import './Carousel.css'
+import { HashLink as Link} from 'react-router-hash-link';
 
 function ImageSlider() {
     let settings = {
@@ -23,7 +24,14 @@ function ImageSlider() {
         <div className='div1'>
         <Slider {...settings}>
             <div className="card-wrapper">
-            <a href="/services/#behdin-service" target="_self">
+            <Link 
+                to="/services#behdin-service" 
+                onClick={() => {
+                    setTimeout(function() {
+                      window.scrollTo(window.scrollX, window.scrollY - 100);
+                  }, 10);
+                  }}
+            >
                 <div className="card">
                     <div className="card-image">
                         <img src="/images/behdin.jpg" />
@@ -37,10 +45,17 @@ function ImageSlider() {
                     <span className="job-desc">PhD, assistant professor @ Department of Occupational Therapy and Occupational Science</span>
                     </div>
                 </div>
-                </a>
+                </Link>
             </div>
             <div className="card-wrapper">
-            <a href="/services/#parvin-service" target="_self">
+            <Link 
+                to="/services#parvin-service"
+                onClick={() => {
+                    setTimeout(function() {
+                      window.scrollTo(window.scrollX, window.scrollY - 100);
+                  }, 10);
+                  }}
+            >
                 <div className="card">
                     <div className="card-image">
                         <img src="images/drparvin.jpg" />
@@ -54,7 +69,7 @@ function ImageSlider() {
                         <span className="job-desc">Occupational Therapist</span>
                     </div>
                 </div>
-                </a>
+                </Link>
             </div>
         </Slider>
         </div>

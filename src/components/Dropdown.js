@@ -17,14 +17,18 @@ function Dropdown({MenuItems}) {
         {MenuItems.map((item, index) => {
           return (
             <li key={index}>
-              <a
+              <Link
                 className={item.cName}
-                href={item.path}
-                target="_self"
-                onClick={() => setClick(false)}
+                to={item.path}
+                onClick={() => {
+                  setClick(false)
+                  setTimeout(function() {
+                    window.scrollTo(window.scrollX, window.scrollY - 100);
+                }, 10);
+                }}
               >
                 {item.title}
-              </a>
+              </Link>
             </li>
           );
         })}
