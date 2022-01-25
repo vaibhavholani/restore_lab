@@ -1,0 +1,283 @@
+.servicesPage {
+    background: transparent;
+}
+
+
+
+.servicesPage .custom-heading {
+  color: var(--secondary);
+  font-size: 5em;
+  padding: 30px 0px;
+  background: white;
+}
+.servicesPage .timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+  }
+  .servicesPage .timeline:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: -1.5px;
+    content: "";
+    background-color: #e9ecef;
+  }
+  .servicesPage .timeline > li {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 50px;
+  }
+  .servicesPage .timeline > li:after, .timeline > li:before {
+    display: table;
+    content: " ";
+  }
+  .servicesPage .timeline > li:after {
+    clear: both;
+  }
+  .servicesPage .timeline > li .timeline-panel {
+    position: relative;
+    float: right;
+    width: 100%;
+    padding: 0 20px 0 100px;
+    text-align: left;
+  }
+  .servicesPage .timeline > li .timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+  }
+  .servicesPage .timeline > li .timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+  }
+  .servicesPage .timeline > li .timeline-image {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    margin-left: 0;
+    text-align: center;
+    color: white;
+    border: 7px solid #e9ecef;
+    border-radius: 100%;
+  }
+  .servicesPage .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
+    font-size: 10px;
+    line-height: 14px;
+    margin-top: 12px;
+  }
+  .servicesPage .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+    padding: 0 20px 0 100px;
+    text-align: left;
+  }
+  .servicesPage .timeline > li.timeline-inverted > .timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+  }
+  .servicesPage .timeline > li.timeline-inverted > .timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+  }
+  .servicesPage .timeline > li:last-child {
+    margin-bottom: 0;
+  }
+  .servicesPage .timeline .timeline-heading h4, .servicesPage .timeline .timeline-heading .h4 {
+    margin-top: 0;
+    color: white;
+    background: white;
+    font-size: 2em;
+  }
+  .servicesPage .timeline .timeline-heading h4.subheading, .timeline .timeline-heading .subheading.h4 {
+    text-transform: none;
+  }
+  .servicesPage .timeline .timeline-body > ul,
+  .servicesPage .timeline .timeline-body > p {
+    margin-bottom: 0;
+    color: rgb(160, 160, 160);
+    background: white;
+  }
+  
+  @media (min-width: 768px) {
+    .servicesPage .timeline:before {
+      left: 50%;
+    }
+    .servicesPage .timeline > li {
+      min-height: 100px;
+      margin-bottom: 100px;
+    }
+    .servicesPage .timeline > li .timeline-panel {
+      float: left;
+      width: 41%;
+      padding: 0 20px 20px 30px;
+      text-align: right;
+    }
+    .servicesPage .timeline > li .timeline-image {
+      left: 50%;
+      width: 100px;
+      height: 100px;
+      margin-left: -50px;
+    }
+    .servicesPage .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
+      font-size: 13px;
+      line-height: 18px;
+      margin-top: 16px;
+    }
+    .servicesPage .timeline > li.timeline-inverted > .timeline-panel {
+      float: right;
+      padding: 0 30px 20px 20px;
+      text-align: left;
+    }
+  }
+  @media (min-width: 992px) {
+    .servicesPage .timeline > li {
+      min-height: 150px;
+    }
+    .servicesPage .timeline > li .timeline-panel {
+      padding: 0 20px 20px;
+    }
+    .servicesPage .timeline > li .timeline-image {
+      width: 150px;
+      height: 150px;
+      margin-left: -75px;
+    }
+    .servicesPage .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
+      font-size: 18px;
+      line-height: 26px;
+      margin-top: 30px;
+    }
+    .servicesPage .timeline > li.timeline-inverted > .timeline-panel {
+      padding: 0 20px 20px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .servicesPage .timeline > li {
+      min-height: 170px;
+    }
+    .servicesPage .timeline > li .timeline-panel {
+      padding: 0 20px 20px 100px;
+    }
+    .servicesPage .timeline > li .timeline-image {
+      width: 170px;
+      height: 170px;
+      margin-left: -85px;
+    }
+    .servicesPage .timeline > li .timeline-image h4, .servicesPage .timeline > li .timeline-image .h4 {
+      margin-top: 40px;
+    }
+    .servicesPage .timeline > li.timeline-inverted > .timeline-panel {
+      padding: 0 100px 20px 20px;
+    }
+  }
+  
+  .servicesPage .page-section {
+    padding: 6rem 0;
+  }
+  .servicesPage .page-section h2.section-heading, .servicesPage .page-section .section-heading.h2 {
+    font-size: 2.5rem;
+    margin-top: 10pt;
+    margin-bottom: 1rem;
+    color: #66FCF1;
+  }
+  .servicesPage .page-section h3.section-subheading, .servicesPage .page-section .section-subheading.h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-bottom: 4rem;
+  }
+/* 
+  .sub-h4 {
+    font-size: 1.5rem;
+  } */
+  
+  @media (min-width: 768px) {
+    .servicesPage section {
+      padding: 9rem 0;
+    }
+  }
+  
+  .servicesPage .text-center {
+      text-align: center !important;
+      color: #66FCF1;
+  }
+  
+   .servicesPage .page-section h2.section-heading,  .servicesPage .page-section .section-heading.h2 {
+      font-size: 2.5rem;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: #66FCF1;
+  }
+  .servicesPage .text-uppercase {
+      text-transform: uppercase !important;
+  }
+  
+  .servicesPage .page-section h3.section-subheading, .page-section .section-subheading.h3 {
+      font-size: 1rem;
+      font-weight: 400;
+      font-style: italic;
+      font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      margin-bottom: 4rem;
+      color: white;
+  }
+  
+  .servicesPage .text-muted {
+      --bs-text-opacity: 1;
+      
+  }
+  
+  .servicesPage p {
+      line-height: 1.75;
+  }
+  
+  .container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+      width: 100%;
+      padding-right: var(--bs-gutter-x, 0.75rem);
+      padding-left: var(--bs-gutter-x, 0.75rem);
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+  .servicesPage *, .servicesPage *::before, .servicesPage *::after {
+      box-sizing: border-box;
+  }
+  
+  .servicesPage .rounded-circle {
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-position: 50% 50%; */
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+.servicesPage .secondary-color {
+    color: var(--secondary) !important
+}
+
+.servicesPage .black {
+  color: black !important;
+}
+
+@media (max-width: 1100px) {
+  .servicesPage .custom-heading {
+    color: var(--secondary);
+    font-size: 13vw;
+    padding: 30px 0px;
+    background: white;
+  }
+}
