@@ -44,11 +44,25 @@ export const team = [
     }, 
     {
         img: "/images/abosede.png", 
-        title: "Volunteer @ ReSTORE LAB", 
+        title: "Research Assistant", 
         id: "abosede-service",
         name: "Dr. Abosede Okoduwa", 
         desc: `Abosede is currently a volunteer at ReSTORE lab, she joined the team as a research assistant in September 2021 while doing her internship as a clinical research student. She assists the research team with tasks such as but not limited to literature search, protocol writing and review of questionnaires in ongoing projects. She has over 10 years of experience as a clinician and has extensive knowledge in research. She possesses strong interpersonal and teaming skills, she is self motivated and result driven. Abosede has a passion for improving the quality of life of people.`
     },
+    {
+        img: "/images/fatin.jpg", 
+        title: "Volunteer", 
+        id: "fatin-service",
+        name: "Dr. Fatin Akeela", 
+        desc: `Fatin is highly experienced as a general physician in different countries outside Canada and has a post-graduate diploma in clinical research. She is currently a volunteer at ReSTORE lab, where she first joined the team as a research assistant in January 2022. She has solid knowledge of clinical research methodology and documentation. She is passionate about helping others, and that is why she works in rural areas to survey living standards, provide counselling, health and sanitation education, vaccinations and various cancer screenings, volunteer for charity and interpretation to help people with their language barriers..`
+    }, 
+    {
+        img: "/images/ajith.jpg", 
+        title: "Volunteer", 
+        id: "ajith-service",
+        name: "Dr. Ajith Krishnan C G", 
+        desc: `Ajith is a Public Health Dentist with more than two decades of teaching and research experience. His key areas of interest are Public Health Research, Epidemiology, and Evidence-Based Dentistry. He has held several chief academic and administrative positions at various levels during his career. He has outstanding organizational, time management, and problem-solving skills. Ajith holds a Post Graduate Diploma in Clinical Research and is currently pursuing Applied Clinical Research Certificate program at McMaster University, Hamilton. He has over 50 publications in various scientific journals including PubMed indexed journals. Ajith joined the team as a volunteer from February 2022.`
+    }, 
     {
         img: "/images/blank_person.png" , 
         title: "Co-op Student @ ReSTORE Lab", 
