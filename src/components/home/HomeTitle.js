@@ -19,7 +19,7 @@ function HomeTitle() {
   return (
     <div className='hero-container'>
       <div className="title">
-        <h1 class="main"><span style={{color: "white"}}>ReSTORE</span> LAB</h1>
+        <h1 class="main"><span style={{color: "white"}}>reSTORE</span> Lab</h1>
         <p className="desc">
         <div><b>Re</b>habilitation </div>
         <div><b>S</b>ciences <b>T</b>hrough </div>

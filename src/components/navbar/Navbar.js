@@ -83,7 +83,7 @@ function Navbar() {
       <nav className={`navbar`}>
         <div className='navbar-container'>
           <Link to='/' className={`navbar-logo ${navbar ? "active-navbar": null}`} onClick={closeMobileMenu}>
-            <h4><span class="spacing">ReSTORE</span> <span style={{color: "var(--secondary)"}}>LAB</span></h4>
+            <h4><span class="spacing"><img src='../../assets/restore_lab_logo.png' class='logo_class'></img></span><span style={{color: "var(--secondary)"}}></span></h4>
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
