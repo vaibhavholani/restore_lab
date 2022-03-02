@@ -98,7 +98,6 @@ function Navbar() {
               onMouseEnter={onMouseEnter}
               onMouseLeave={onMouseLeave}>
               <Link
-                
                 to='/services'
                 className={`nav-links ${navbar ? "active-navbar": null}`}
                 onClick={closeMobileMenu}

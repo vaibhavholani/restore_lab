@@ -23,8 +23,7 @@ export default function HomeLeader() {
                     <span class="desc">
                     Dr. Behdin Nowrouzi-Kia, PhD, is an assistant professor in the Department of Occupational Therapy and Occupational Science, 
                     where he also holds the inaugural Emily Geldsaler Grant Early Career Professorship in 
-                    Workplace Mental Health. Through an occupational lens, his research program is a sy
-                    stematic study of occupations in the areas of work disability prevention, return to work, 
+                    Workplace Mental Health. Through an occupational lens, his research program is a systematic study of occupations in the areas of work disability prevention, return to work, 
                     and disability management. This approach is designed to produce results directly applicable to identify 
                     and assess risk and to develop interventions for preventing or improving high-risk behaviours in the workplace. 
                     </span>

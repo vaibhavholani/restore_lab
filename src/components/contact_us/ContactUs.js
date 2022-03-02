@@ -13,7 +13,7 @@ export default function ContactUs() {
         <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=500%20university%20avenue%20toronto&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"></iframe>
             <div class="img-desc">
                 <p className="title-desc">
-                <span style={{color:"white", letterSpacing: 3}}> OUR ADDRESS: </span> 500 University Avenue
+                <span style={{color:"white", letterSpacing: 3}}> ADDRESS: </span> 500 University Avenue
                 </p>
                 <p className="title-desc">
                 <span style={{color:"white", letterSpacing: 3}}> LAB ROOM NUMBER: </span> 961
