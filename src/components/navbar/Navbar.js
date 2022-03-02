@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Dropdown from './Dropdown';
 import {InvestigatorItems} from './NavInvestigatorItems.js'
-import {ProjectItems} from './NavProjectItems.js'
+import {getNavProjectItems} from '../api_calls/get_all_project'
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -12,6 +12,7 @@ function Navbar() {
   const [navbar, setNavbar] = useState(false)
   const [dropdown, setDropdown] = useState(false);
   const [dropdownProject, setDropdownProject] = useState(false);
+  const [ProjectItems, setProjectItems] = useState([])
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -25,6 +26,7 @@ function Navbar() {
   };
 
   useEffect(() => {
+    getNavProjectItems(setProjectItems);
     showButton();
   }, []);
 
