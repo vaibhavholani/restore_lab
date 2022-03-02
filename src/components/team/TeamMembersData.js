@@ -64,6 +64,13 @@ export const team = [
         desc: `Ajith is a Public Health Dentist with more than two decades of teaching and research experience. His key areas of interest are Public Health Research, Epidemiology, and Evidence-Based Dentistry. He has held several chief academic and administrative positions at various levels during his career. He has outstanding organizational, time management, and problem-solving skills. Ajith holds a Post Graduate Diploma in Clinical Research and is currently pursuing Applied Clinical Research Certificate program at McMaster University, Hamilton. He has over 50 publications in various scientific journals including PubMed indexed journals. Ajith joined the team as a volunteer from February 2022.`
     }, 
     {
+        img: "/images/blank_person.png", 
+        title: "Volunteer", 
+        id: "",
+        name: "Aaron Howe", 
+        desc: "Aaron is a graduate student at Columbia University, where he is completing his studies in Clinical Psychology. He has previously worked at the Centre for Addiction and Mental Health on various projects related to investigating epigenetic and genetic mechanisms of suicidal behaviour in adult schizophrenia spectrum patients. Aaron has a passion for studying the intersection between psychoneuroendocrinology and evidence-based mental health treatments for children and adolescents. He has joined the ReSTORE Lab in March 2022 to contribute to mental health related projects"
+    },
+    {
         img: "/images/blank_person.png" , 
         title: "Co-op Student @ ReSTORE Lab", 
         id: "",
