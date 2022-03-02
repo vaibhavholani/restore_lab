@@ -1,11 +1,18 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {team} from './TeamMembersData'
+import {get_all_team} from '../api_calls/get_all_team'
 import './Team.css'
 
 
 export default function Team() {
+
+    const [team, setTeam] = useState([])
+
+    useEffect(() => {
+        get_all_team(setTeam)
+    }, [])
     return (
     <>
         <section className="section servicesPage">
