@@ -12,7 +12,7 @@ function Home() {
       <HomeTitle />
       <HomeAboutUs/>
       <HomeLeader />
-      <HomeImageSlider />
+      {/* <HomeImageSlider /> */}
       <HomeCards />
     </>
   );

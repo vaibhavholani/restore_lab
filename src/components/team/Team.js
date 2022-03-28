@@ -9,10 +9,20 @@ import './Team.css'
 export default function Team() {
 
     const [team, setTeam] = useState([])
+    const [load, setLoad] = useState(true)
 
     useEffect(() => {
+        setLoad(true)
         get_all_team(setTeam)
     }, [])
+    useEffect(() => {
+        if (team.length !== 0) {
+            setLoad(false)
+        }
+    }, [team])
+
+    
+
     return (
     <>
         <section className="section servicesPage">
@@ -20,6 +30,11 @@ export default function Team() {
             <div class="cntnr">
                 <div class="text-center">
                     <h2 class="custom-heading text-uppercase black">Meet our Team!</h2>
+                    {load?
+                    <div class="loader-wrapper">
+                        <h2 style={{color: 'white', background: "black"}}class="custom-heading text-uppercase">Loading Team!</h2>
+                        <span class="loader"><span class="loader-inner"></span></span>
+                    </div> : null}
                 </div>
                 <ul class="timeline">
                     {

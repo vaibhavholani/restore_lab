@@ -14,7 +14,7 @@ export default function Projects() {
     <div class="all-projects">
         <h1> <span style={{color: "white", fontSize: "3rem"}}>OUR </span><span style={{color: "var(--secondary)", fontSize: "3rem"}} class="fat-underline"> PROJECTS </span></h1>
         {
-            projects.map(project => {
+            (projects ? projects: []).map(project => {
                 return (
                     <div class="project-container" id={project.id}>
                         <div className="heading">  
