@@ -9,7 +9,7 @@ export default function HomeLeader() {
             </div>
             <div className="main">
                 <div className="left">
-                    <img src={process.env.PUBLIC_URL + "/images/behdin.jpg"} alt="Dr. Behdin's Headshot" />
+                    <img src={process.env.PUBLIC_URL + "/assets/nowrouzikia-behdin.jpg"} alt="Dr. Behdin's Headshot" />
                     <div class="img-desc">
                         <p class="title">
                         Dr. Behdin Nowrouzi-Kia

@@ -5,6 +5,8 @@ import HomeTitle from './HomeTitle';
 import HomeAboutUs from './HomeAboutUs';
 import HomeImageSlider from './HomeCarousel';
 import HomeLeader from './HomeLeader';
+import TwitterData from './TwitterData';
+
 
 function Home() {
   return (
@@ -14,6 +16,7 @@ function Home() {
       <HomeLeader />
       {/* <HomeImageSlider /> */}
       <HomeCards />
+      <TwitterData/>
     </>
   );
 }

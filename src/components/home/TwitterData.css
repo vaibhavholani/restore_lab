@@ -1,0 +1,38 @@
+.twitter-container {
+    background: white;
+    /* margin: 25px 50px; */
+    padding: 50px 50px;
+    border: 10px outset var(--secondary);
+    border-radius: 12px;
+    /* box-shadow: 0 0 0 2rem skyblue; */
+    margin-left: 33%;
+    margin-right: 33%;
+}
+
+.twitter-container h1 {
+    text-align: center;
+    font-size: 5em;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: var(black);
+}
+
+.twitter-container .fat-underline {
+    position: relative;
+}
+
+
+.twitter-container .fat-underline::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    bottom: 0px;
+    height: 10px;
+    left: 0px;
+    right: 0px;
+    
+}
+
+.twitter-data {
+    margin-top: 30px;
+}

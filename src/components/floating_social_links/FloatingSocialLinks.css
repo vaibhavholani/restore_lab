@@ -2,6 +2,7 @@
 #fixed-social {
   position: fixed;
   top: 130px;
+  right: 0px;
 }
 
 #fixed-social a {
@@ -10,19 +11,19 @@
   height: 40px;
   position: relative;
   text-align: center;
-   line-height: 40px;
+  line-height: 40px;
   width: 40px;
   margin-bottom: 1px;
   z-index: 2;
 }
 #fixed-social a:hover>span{
  visibility: visible;
- left: 41px;
+ left: -121px;
  opacity: 1;
 } 
 #fixed-social a span {
  line-height: 40px;
-   left: 60px;
+   right: 60px;
    position: absolute;
    text-align: center;
    width: 120px;
