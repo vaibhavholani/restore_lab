@@ -130,6 +130,12 @@ function Navbar() {
               </Link>
             </li>
 
+            <li className='nav-item'>
+              <Link to='/jobpostings' className={`nav-links ${navbar ? "active-navbar": null}`} onClick={closeMobileMenu}>
+                Job Postings
+              </Link>
+            </li>
+
             <li className='nav-item active-button'>
               <Link onClick={joinUs} className={`nav-links ${navbar ? "active-navbar": null}`} >
                 Join Us
