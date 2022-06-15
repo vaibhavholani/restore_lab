@@ -7,6 +7,7 @@ import Projects from './components/projects/Projects';
 import Footer from './components/floating_social_links/FloatingSocialLinks.js';
 import ContactUs from './components/contact_us/ContactUs';
 import JobPosting from './components/jobposting/JobPosting';
+import PublishedResearch from './components/published_research/PublishedResearch'
 import {get_all_project} from './components/api_calls/get_all_project';
 import {get_all_team} from './components/api_calls/get_all_team';
 import './App.css';
@@ -33,6 +34,7 @@ function App() {
           <Route path='/services' component={Services}/>
           <Route path='/projects' component={Projects} />
           <Route path='/contactus' component={ContactUs} />
+          <Route path='/published_material' component={PublishedResearch} />
           <Route path='/jobpostings' component={JobPosting} />
         </Switch>
       </Router>

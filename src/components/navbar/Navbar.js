@@ -125,6 +125,12 @@ function Navbar() {
             </li>
 
             <li className='nav-item'>
+              <Link to='/published_research' className={`nav-links ${navbar ? "active-navbar": null}`} onClick={closeMobileMenu}>
+                Published Research
+              </Link>
+            </li>
+
+            <li className='nav-item'>
               <Link to='/contactus' className={`nav-links ${navbar ? "active-navbar": null}`} onClick={closeMobileMenu}>
                 Contact Us
               </Link>
