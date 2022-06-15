@@ -3,6 +3,7 @@ import { Button } from '../custom_components/Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Dropdown from './Dropdown';
+import {ReactComponent as ReactLogo} from './restore_lab_logo.svg';
 import {InvestigatorItems} from './NavInvestigatorItems.js'
 import {getNavProjectItems} from '../api_calls/get_all_project'
 
@@ -83,10 +84,11 @@ function Navbar() {
   return (
     <>
       <nav className={`navbar`}>
-        <div className='navbar-container'>
           <Link to='/' className={`navbar-logo ${navbar ? "active-navbar": null}`} onClick={closeMobileMenu}>
-            <h4><span class="spacing"><img src='../../assets/restore_lab_logo.png' class='logo_class'></img></span><span style={{color: "var(--secondary)"}}></span></h4>
+        <ReactLogo/>
+            
           </Link>
+        <div className='navbar-container'>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
