@@ -1,0 +1,176 @@
+
+.alumniContainer .alumniHeading {
+    background: black;
+}
+
+.alumniContainer .alumniItem {
+        background: white;
+        margin: 20px 50px;
+        border: 3px outset var(--secondary);
+        border-radius: 12px;
+        /* box-shadow: 0 0 0 2rem skyblue; */}
+
+.alumniContainer .alumniItem img {
+    border-radius: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    border: 3px var(--secondary-base) solid;
+    padding: 3px;
+    max-width: 150px;
+    max-height: 150px;
+    min-width: 150px;
+    margin: 0 30px;
+    height: 100%;
+    width: 100%;
+}
+
+.alumniContainer h1 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: var(black);
+}
+
+.alumniContainer .fat-underline {
+    position: relative;
+}
+
+
+.alumniContainer .fat-underline::after {
+    
+    content: "";
+    position: absolute;
+    background-color: black;
+    bottom: 0px;
+    height: 3px;
+    left: 0px;
+    right: 0px;
+    
+}
+
+.alumniContainer .main {
+    display: flex;
+    align-items: space-around;
+    justify-content: space-around;
+}
+
+.alumniContainer .desc {
+    font-weight: 400;
+    font-size: 17px;
+    color: rgb(47, 47, 47);
+    text-align: center;
+}
+
+.leader-container .img-desc {
+    margin: 15px 0px;
+}
+
+.alumniContainer .title {
+
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+}
+
+.alumniContainer .duration {
+
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.alumniContainer .title-desc {
+    text-align: center;
+    color: var(--secondary-base)
+}
+
+.alumniContainer .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alumniContainer .left {
+    display: flex;
+    padding: 5px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.alumniSocial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+.alumniSocial .iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    border-radius: 100%;
+    background: var(--secondary-base)
+}
+
+.alumniSocial .icon {
+    color: white;
+}
+
+
+@media (max-width: 1100px) {
+
+    .leader-container {
+        background: white;
+        margin: 20px 10px;
+        padding: 50px 50px;
+        border: 10px outset var(--secondary);
+        border-radius: 12px;
+        /* box-shadow: 0 0 0 2rem skyblue; */
+    }
+    
+    .leader-container h1 {
+        font-size: 10vw;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .leader-container .fat-underline::after {
+        display: none
+    }
+
+    .leader-container .main {
+        flex-direction: column;
+    }
+
+    
+    .leader-container .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .leader-container .title {
+        font-size: 5vw;
+    }
+    
+
+    .leader-container img {
+        min-width: 150px;
+        margin: 0;
+    }
+
+    .leader-container .title, .leader-container .title-desc  {
+        padding-right: 0; 
+    }
+
+    .leader-container .desc {
+        font-size: 5vw;
+    }
+
+}

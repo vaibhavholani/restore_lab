@@ -7,13 +7,12 @@ import {ReactComponent as ReactLogo} from './restore_lab_logo.svg';
 import {InvestigatorItems} from './NavInvestigatorItems.js'
 import {getNavProjectItems} from '../api_calls/get_all_project'
 
-function Navbar() {
+function Navbar({ProjectItems}) {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
   const [navbar, setNavbar] = useState(false)
   const [dropdown, setDropdown] = useState(false);
   const [dropdownProject, setDropdownProject] = useState(false);
-  const [ProjectItems, setProjectItems] = useState([])
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -27,7 +26,6 @@ function Navbar() {
   };
 
   useEffect(() => {
-    getNavProjectItems(setProjectItems);
     showButton();
   }, []);
 
@@ -86,7 +84,6 @@ function Navbar() {
       <nav className={`navbar`}>
           <Link to='/' className={`navbar-logo ${navbar ? "active-navbar": null}`} onClick={closeMobileMenu}>
         <ReactLogo/>
-            
           </Link>
         <div className='navbar-container'>
           <div className='menu-icon' onClick={handleClick}>
@@ -124,17 +121,18 @@ function Navbar() {
               {dropdownProject && <Dropdown MenuItems={ProjectItems} />}
             </li>
 
+            {/* <li className='nav-item'>
+              <Link to='/alumni' className={`nav-links ${navbar ? "active-navbar": null}`} onClick={closeMobileMenu}>
+                Alumni
+              </Link>
+            </li> */}
+            
             <li className='nav-item'>
               <Link to='/contactus' className={`nav-links ${navbar ? "active-navbar": null}`} onClick={closeMobileMenu}>
                 Contact Us
               </Link>
             </li>
 
-            <li className='nav-item'>
-              <Link to='/jobpostings' className={`nav-links ${navbar ? "active-navbar": null}`} onClick={closeMobileMenu}>
-                Job Postings
-              </Link>
-            </li>
 
             <li className='nav-item active-button'>
               <Link onClick={joinUs} className={`nav-links ${navbar ? "active-navbar": null}`} >

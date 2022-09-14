@@ -81,11 +81,22 @@
     text-align: center;
 }
 
+.project-container .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .project-container .title-desc {
     padding-right: 30px;
     text-align: center;
     color: black;
 
+}
+
+.project-container .projectButton {
+   margin-top: 10px;
 }
 
 @media (max-width: 1100px) {

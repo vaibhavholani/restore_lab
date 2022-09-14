@@ -1,21 +1,25 @@
 import React, {useState, useEffect} from 'react'
+import {projects_trial} from "./ProjectsData"
+import { Button } from '../custom_components/Button';
+import {download_file_by_id} from '../api_calls/get_all_project';
 import "./Projects.css"
-import {get_all_project} from '../api_calls/get_all_project'
 
-export default function Projects() {
+export default function Projects({projects}) {
     
-    const [projects, setProject] = useState([])
     const [load, setLoad] = useState(true)
 
     useEffect(() => {
         setLoad(true)
-        get_all_project(setProject)
     }, [])
+
     useEffect(() => {
         if (projects.length !== 0) {
             setLoad(false)
         }
     }, [projects])
+
+    const onLink = (link) => {window.open(link, '_blank').focus();}
+    const onDownload = (objectID) => {download_file_by_id(objectID);}
 
     return (
     <div class="all-projects">
@@ -35,7 +39,7 @@ export default function Projects() {
                         </div>
                         <div className="main">
                             <div className="left">
-                                <img src={project.img} alt="SSHRC Grant" />
+                                <img src={project.img} alt="Project Title Image" />
                                 <div class="img-desc">
                                     <p class="title">{project.funder}</p>
                                 </div>
@@ -44,6 +48,11 @@ export default function Projects() {
                             <span class="desc">
                             {project.desc}
                             </span>
+                            {project.displayButton && project.displayButton.toUpperCase() === "TRUE"? 
+                                <Button buttonStyle={`btn--outline`} customClass = {"projectButton"}customCSS={true} css={{color: "var(--secondary-base)", border: "var(--secondary-base) 1px solid"}} 
+                                                    onClick={() => {project.buttonType==="link" ? onLink(project.buttonLink) : onDownload(project._id)}}>
+                                    {project.buttonText}
+                                </Button> : null }
                         </div>
                         </div>
                     </div>

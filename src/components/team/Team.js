@@ -6,15 +6,15 @@ import {get_all_team} from '../api_calls/get_all_team'
 import './Team.css'
 
 
-export default function Team() {
+export default function Team({team}) {
 
-    const [team, setTeam] = useState([])
+
     const [load, setLoad] = useState(true)
 
     useEffect(() => {
         setLoad(true)
-        get_all_team(setTeam)
     }, [])
+    
     useEffect(() => {
         if (team.length !== 0) {
             setLoad(false)

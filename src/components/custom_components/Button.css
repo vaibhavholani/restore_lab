@@ -4,6 +4,7 @@
   outline: none;
   border: none;
   cursor: pointer;
+  border: 1px solid black;
 }
 
 .btn--primary {
@@ -47,4 +48,15 @@
 .btn-green:hover {
   background: var(--secondary);
   color: black;
+}
+
+
+.btn-black {
+  color: black;
+  border: 1px solid black;
+}
+
+.btn-black:hover {
+  background: black;
+  color: white;
 }

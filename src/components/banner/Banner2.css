@@ -1,0 +1,105 @@
+.banner .bannerSection {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh;
+  }
+  
+.banner .bannerSubHeading {
+    color: black;
+    font-size: 1.5em;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding-bottom: 40px;
+    padding-top: 30px;
+  }
+  
+  .banner .bannerBlack {
+      background: black;
+      color: black;
+      font-size: 3em;
+      font-size: 300;
+      letter-spacing: 10px;
+  }
+  
+  .banner .bannerHeading {
+      color: black;
+      font-size: 4em;
+      font-weight: 300;
+      letter-spacing: 10px;
+      padding-bottom: 40px;
+  }
+
+  .banner .bannerImage {
+    max-height: 500px;
+    max-width: 40vw;
+  }
+  
+  .banner .fat-underline {
+    position: relative;
+}
+
+
+  .banner .fat-underline::after {
+      
+      content: "";
+      position: absolute;
+      background-color: black;
+      bottom: -6px;
+      height: 6px;
+      left: 0px;
+      right: 0px;
+      
+  }
+
+@media (max-width: 1000px) {
+  
+  .banner .bannerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+
+  .banner .bannerHeading {
+    font-size: 6vw!important;
+    font-weight: 500;
+    letter-spacing: 5px;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .banner .bannerSubHeading {
+    color: black;
+    font-size: 2vw!important;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .banner .bannerImage {
+    max-height: 35vh;
+    max-width: 99vw;
+    padding: 10px;
+  }
+
+  .banner .bannerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bannerButton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+
+}

@@ -3,21 +3,25 @@ import '../../App.css';
 import HomeCards from './HomeCards';
 import HomeTitle from './HomeTitle';
 import HomeAboutUs from './HomeAboutUs';
-import HomeImageSlider from './HomeCarousel';
+// import HomeImageSlider from './HomeCarousel';
 import HomeLeader from './HomeLeader';
 import TwitterData from './TwitterData';
+import HomeDynamicTitle from './HomeDynamicTitle';
+import Banner from '../banner/Banner'
 
 
 function Home() {
   return (
-    <>
-      <HomeTitle />
+    <div>
+      <HomeDynamicTitle/>
+      {/* <HomeTitle /> */}
+      {/* <Banner/> */}
       <HomeAboutUs/>
       <HomeLeader />
       {/* <HomeImageSlider /> */}
-      <HomeCards />
-      <TwitterData/>
-    </>
+      {/* <HomeCards /> */}
+      {/* <TwitterData/> */}
+    </div>
   );
 }
 
