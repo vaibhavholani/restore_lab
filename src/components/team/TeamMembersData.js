@@ -65,7 +65,7 @@ export const team = [
     }, 
     {
         img: "/images/blank_person.png", 
-        title: "Volunteer", 
+        title: "Research Analyst", 
         id: "",
         name: "Aaron Howe", 
         desc: "Aaron is a graduate student at Columbia University, where he is completing his studies in Clinical Psychology. He has previously worked at the Centre for Addiction and Mental Health on various projects related to investigating epigenetic and genetic mechanisms of suicidal behaviour in adult schizophrenia spectrum patients. Aaron has a passion for studying the intersection between psychoneuroendocrinology and evidence-based mental health treatments for children and adolescents. He has joined the ReSTORE Lab in March 2022 to contribute to mental health related projects"

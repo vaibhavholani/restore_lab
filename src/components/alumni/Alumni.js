@@ -7,8 +7,8 @@ export default function Alumni({alumni}) {
     
   
     return (
-    <div class="alumniContainer">
-        <div className="alumniHeading">
+    <div class="alumniContainer" >
+        <div className="alumniHeading" id="alumni">
             <h1> <span style={{color: "white", fontSize: "3rem"}}> OUR </span> <span style={{color: "var(--secondary)", fontSize: "3rem"}} class="fat-underline"> ALUMNI! </span></h1>
         </div>
 

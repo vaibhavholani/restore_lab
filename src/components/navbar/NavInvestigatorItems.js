@@ -19,5 +19,10 @@ export const InvestigatorItems = [
       path: '/services#student',
       cName: 'dropdown-link'
     },
+    {
+      title: 'Alumni',
+      path: '/services#alumni',
+      cName: 'dropdown-link'
+    }
     
   ];
