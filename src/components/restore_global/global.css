@@ -1,0 +1,76 @@
+
+.allcontainerglobal{
+    background-color: black;
+    padding-bottom: 10%;
+}
+.mainheaderglobal{
+    text-align: center;
+    background-color: black;
+    color:  var(--secondary);
+
+}
+
+.headeritem {
+    position: relative;
+    padding-top: 1%;
+padding-bottom: 0%;
+font-size: 250%;}
+
+.otherpart {
+    color: white;
+}
+
+.global-container {
+    background: white;
+    margin: 50px 50px;
+    padding: 50px 50px;
+    border: 10px outset var(--secondary);
+    border-radius: 12px;
+    padding-bottom: 5%;
+}
+
+.global-container h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 150%;
+    letter-spacing: 5px;
+    color: var(black);
+}
+
+.global-container .content_tab {
+    margin-top: 2%;
+    font-size: 150%;
+
+}
+.global-container .flex1 {
+    margin-top: 2%;
+    display: flex;
+    align-items: space-around;
+    justify-content: space-around;
+}
+
+.global-container .globalconsimages {
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.globalconsimages img {
+    max-width: 15%;
+    max-height: 20%;
+    margin-top: 20px;
+
+}
+.globalsouthimages img {
+    max-width: 35%;
+    max-height: 35%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    position: relative;
+    left: 32%;
+}
+
+.southlist {
+    list-style-type: none;
+}

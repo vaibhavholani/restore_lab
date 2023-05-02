@@ -1,6 +1,7 @@
 
 .all-projects {
     background: black;
+    padding-bottom: 2.5%;
 }
 .grid-container {
     display: grid;

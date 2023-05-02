@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Button } from '../custom_components/Button';
 import { Link } from 'react-router-dom';
@@ -6,6 +7,10 @@ import Dropdown from './Dropdown';
 import {ReactComponent as ReactLogo} from './restore_lab_logo.svg';
 import {InvestigatorItems} from './NavInvestigatorItems.js'
 import {getNavProjectItems} from '../api_calls/get_all_project'
+import {global_items} from './GlobalConsortiumItems.js'
+
+import { about_items } from './AboutUsitems';
+
 
 function Navbar({ProjectItems}) {
   const [click, setClick] = useState(false);
@@ -13,6 +18,8 @@ function Navbar({ProjectItems}) {
   const [navbar, setNavbar] = useState(false)
   const [dropdown, setDropdown] = useState(false);
   const [dropdownProject, setDropdownProject] = useState(false);
+  const [dropdownRestoreGlobal, setDropdownRestoreGlobal] = useState(false)
+  const [dropdownAboutUs, setDropdownAboutUs] = useState(false)
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -35,47 +42,59 @@ function Navbar({ProjectItems}) {
   
 
   const onMouseEnter = () => {
-    if (window.innerWidth < 1100) {
-      setDropdown(false);
-    } else {
+
       setDropdown(true);
-    }
+    
   };
 
   const onMouseLeave = () => {
-    if (window.innerWidth < 1100) {
+
       setDropdown(false);
-    } else {
-      setDropdown(false);
-    }
+    
   };
   
   const onMouseEnterProject = () => {
-    if (window.innerWidth < 1100) {
-      setDropdownProject(false);
-    } else {
+
       setDropdownProject(true);
-    }
+    
   };
 
   const onMouseLeaveProject = () => {
-    if (window.innerWidth < 1100) {
+
       setDropdownProject(false);
-    } else {
-      setDropdownProject(false);
-    }
+    
+  };
+  const onMouseEnterRGlobal = () => {
+
+      setDropdownRestoreGlobal(true);
+    
+  };
+
+  const onMouseLeaveRGlobal = () => {
+
+      setDropdownRestoreGlobal(false);
+    
+  };
+
+  const onMouseEnterAboutUs = () => {
+
+      setDropdownAboutUs(true);
+    
+  };
+
+  const onMouseLeaveAboutUs = () => {
+
+      setDropdownAboutUs(false);
+    
   };
 
   window.addEventListener('resize', showButton);
 
   const changeBackground = () => {
-    if (window.scrollY >= 300) {
-      setNavbar(true)
-    }
-    else {
       setNavbar(false)
-    }
   }
+
+
 
   window.addEventListener('scroll', changeBackground)
 
@@ -96,6 +115,16 @@ function Navbar({ProjectItems}) {
               </Link>
             </li>
             <li className='nav-item'
+                          onMouseEnter={onMouseEnterAboutUs}
+                          onMouseLeave={onMouseLeaveAboutUs}>
+              <Link to='/aboutus' className={`nav-links ${navbar ? "active-navbar": null}`} onClick={closeMobileMenu}>
+                About Us
+              </Link>
+              {dropdownAboutUs && <Dropdown MenuItems={about_items} />}
+
+            </li> 
+
+            <li className='nav-item'
               onMouseEnter={onMouseEnter}
               onMouseLeave={onMouseLeave}>
               <Link
@@ -107,7 +136,7 @@ function Navbar({ProjectItems}) {
               </Link>
               {dropdown && <Dropdown MenuItems={InvestigatorItems} />}
             </li>
-            <li className='nav-item'
+            <li  className='nav-item'
               onMouseEnter={onMouseEnterProject}
               onMouseLeave={onMouseLeaveProject}
             >
@@ -127,6 +156,20 @@ function Navbar({ProjectItems}) {
               </Link>
             </li> */}
             
+            <li className='nav-item'
+              onMouseEnter={onMouseEnterRGlobal}
+              onMouseLeave={onMouseLeaveRGlobal}
+            >
+            <Link
+                to='/restore_global'
+                className={`nav-links ${navbar ? "active-navbar": null}`}
+                onClick={closeMobileMenu}
+              >
+                ReSTORE- Global 
+              </Link>
+              {dropdownRestoreGlobal && <Dropdown MenuItems={global_items} />}
+            </li>
+
             <li className='nav-item'>
               <Link to='/contactus' className={`nav-links ${navbar ? "active-navbar": null}`} onClick={closeMobileMenu}>
                 Contact Us

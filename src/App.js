@@ -13,7 +13,10 @@ import {get_all_team_no_img, get_img_by_id} from './components/api_calls/get_all
 import {get_all_alumni_no_img, get_alum_img_by_id} from './components/api_calls/get_all_alumni';
 import {getNavProjectItems} from './components/api_calls/get_all_project';
 import './App.css';
-
+import Publications from './components/publications/Publications';
+import ProjectForm from './components/PDM/ProjectForm';
+import AboutUs from './components/aboutsus/description';
+import RestoreGlobal from './components/restore_global/RestoreGlobal';
 
 function App() {
   
@@ -78,10 +81,20 @@ function App() {
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/services'> <Team team={team}/> <Alumni alumni={alumni}/></Route>
-          <Route path='/projects'> <Projects projects={projects}/></Route>
+          <Route path='/projects'> <Projects projects={projects}/>  </Route>
           <Route path='/contactus' component={ContactUs} />
+          <Route path='/aboutus' component={AboutUs} />
+          <Route path='/restore_global' component={RestoreGlobal} />
+
+
+
+          
         </Switch>
+
       </Router>
+
+
+
       <Footer />
     </>
   );

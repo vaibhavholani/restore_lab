@@ -35,6 +35,14 @@ const processNavProjects = (projects) => {
             }
         )
     })
+
+    const publicationsHeading = {
+        title: 'Publications',
+        path: `/projects#publications`,
+        cName: 'dropdown-link'
+    }
+
+    processedProjects.push(publicationsHeading)
     console.log(processedProjects)
     return processedProjects
 }
@@ -43,7 +51,7 @@ export const getNavProjectItems = (setProjects) => {
     
     const cookie = localStorage.getItem("restorelabcookieimp") 
     const url = `${API_HOST}/api/project/navbar/${cookie}`
-
+    
     fetch(url).then(response => response.json()).then(json => setProjects(processNavProjects(json.projects)))
 }
 

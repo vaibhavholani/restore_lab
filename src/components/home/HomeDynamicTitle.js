@@ -6,6 +6,7 @@ import HomeTitle from './HomeTitle';
 import Banner from '../banner/Banner'
 import {bannerData} from '../banner/bannerData'
 import {get_all_banner} from '../api_calls/get_all_banner'
+import './HomeDynamicTitle.css'
 
 export default function HomeDynamicTitle() {
     
@@ -19,7 +20,7 @@ export default function HomeDynamicTitle() {
         speed: 2000,
         autoplaySpeed: 5000,
         cssEase: "linear", 
-        adaptiveHeight: true
+        adaptiveHeight: true,
     })
 
     const [banners, setBanner] = useState([])
@@ -41,7 +42,8 @@ export default function HomeDynamicTitle() {
             )
         })
     }
+
     </Slider>
-   </div>
+    </div>
   )
 }

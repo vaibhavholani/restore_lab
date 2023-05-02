@@ -19,5 +19,10 @@ export const ProjectItems = [
       path: '/projects#workers_comp_project',
       cName: 'dropdown-link'
     },
+    // {
+    //   title: 'Publications',
+    //   path: '/projects#publications',
+    //   cName: 'dropdown-link'
+    // },
     
-  ];
+]
